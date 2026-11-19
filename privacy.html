@@ -53,11 +53,14 @@
       <tr><td><b>Coffee chat profile</b>, if you make one: one-line intro, field of study, bio, interest tags, years of service, city, and whether you’re open to chats.</td><td>So others can find you and ask for a coffee chat.</td></tr>
       <tr><td><b>Coffee chat requests</b>: your message, the topics, and one way to reach you (Signal link, LinkedIn URL, or email).</td><td>To pass your request to the person you asked. They see the contact only after they accept.</td></tr>
       <tr><td><b>Activity</b>: saved listings, club join requests and memberships, people you block, and reports you send.</td><td>To run those features, and to deal with reports.</td></tr>
+      <tr><td><b>Notifications for you</b>: a list of updates such as “your coffee chat was accepted” or “your question has a new answer”, and whether you’ve read them.</td><td>To show what’s waiting for you in the app, and to send push notifications if you turn them on.</td></tr>
+      <tr><td><b>Push token</b>, only if you turn on notifications: an address for this phone issued by Apple or Google, and whether it’s an iPhone or Android phone. Also the kinds of notifications you turned off.</td><td>To send notifications to this phone. Removed when you sign out on this phone or delete your account.</td></tr>
       <tr><td><b>Photos you choose</b> for a listing. They’re resized and re-saved on your phone before upload, which removes the location data cameras store in photos.</td><td>To show your listing.</td></tr>
       <tr><td><b>Server logs</b> kept by our hosting provider: IP address, time, and request details.</td><td>To keep the service running and secure. Kept for a short time.</td></tr>
     </tbody>
   </table>
   </div>
+  <p>Notifications are off until you allow them, and you can turn each kind off in My profile › Notifications. The lock screen only says what kind of update it is, never names or messages.</p>
   <p>We don’t collect your location, contacts, or advertising ID. There are no ads, analytics, or tracking tools in the app.
   The city you pick is a setting you choose, not your location.</p>
   <p>Some things stay only on your phone: a copy of your profile, whether you’ve agreed to the community rules, and which answers you’ve already seen.
@@ -79,6 +82,7 @@
     <li><b>Expired market listings</b>: deleted 90 days after they expire (sold listings, about 270 days after they’re marked sold).</li>
     <li><b>Bans</b>: if an account is banned, we keep the sign-in provider and account ID (not the email) after deletion, so the same account can’t sign up again. We keep it while the ban lasts.</li>
     <li><b>Moderation records</b>: a log of what we hid or removed and why. It refers to posts by ID and doesn’t keep the post itself. We keep it to show how we handled reports.</li>
+    <li><b>Notifications</b>: until you delete them or your account. Push tokens: until you sign out on that phone, delete your account, or the phone stops accepting notifications.</li>
     <li><b>Server logs</b>: a short time, set by our hosting provider.</li>
   </ul>
   <p>When the time is up we delete the data from the database and storage. There are no paper records.</p>
@@ -91,8 +95,9 @@
     <thead><tr><th>Company</th><th>What they do</th><th>Where</th></tr></thead>
     <tbody>
       <tr><td>Supabase, Inc.</td><td>Database, file storage, sign-in, servers</td><td>Data stored in Seoul, South Korea (Amazon Web Services). Supabase is a U.S. company and may access it from abroad to operate the service.</td></tr>
-      <tr><td>Google LLC</td><td>“Continue with Google” sign-in</td><td>United States</td></tr>
-      <tr><td>Apple Inc.</td><td>“Continue with Apple” sign-in</td><td>United States</td></tr>
+      <tr><td>Google LLC</td><td>“Continue with Google” sign-in, and delivering notifications to Android phones</td><td>United States</td></tr>
+      <tr><td>Apple Inc.</td><td>“Continue with Apple” sign-in, and delivering notifications to iPhones</td><td>United States</td></tr>
+      <tr><td>650 Industries, Inc. (Expo)</td><td>Passing notifications to Apple and Google for delivery. It receives the push token and the notification text, which only says what kind of update it is.</td><td>United States</td></tr>
     </tbody>
   </table>
   </div>
